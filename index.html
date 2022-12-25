@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhaka naka production</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind add -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customizing code -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              mono: ["Montserrat", "sans-serif"],
+            },
+            colors: {
+              yellow: "#FECC02",
+              offBlack: "#131314",
+              darkGrey: "#4E4E4E",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <header class="w-full h-20 flex justify-center absolute bg-white">
+    <nav class="w-4/5 h-full flex justify-between items-center font-bebas">
+      <h1 class="text-4xl pr-3 cursor-pointer">Jhaka Naka Production</h1>
+      <ul class="flex gap-x-5 cursor-pointer text-xl hidden md:flex">
+        <li class="tcursor-pointer">About Us</li>
+        <li class="cursor-pointer">Our Movies</li>
+        <li class="cursor-pointer">Services</li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <section class="h-screen pt-20 bg-[url('/images/banner.jpg')] bg-cover flex items-center">
+        <div class="font-bebas ml-14 text-white w-2/4">
+          <p class="text-xl ">Movie production studio</p>
+        <h1 class="text-7xl ">Films MAde to</h1>
+        <h1 class="text-7xl text-yellow">Perfection</h1>
+        <p class="font-mono mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <button class="text-2xl text-white border-2 p-2 mt-7 hover:bg-yellow hover:text-black transition-all
+        hover:border-yellow">Discover More</button>
+        </div>
+    </main>
+  </body>
+</html>
